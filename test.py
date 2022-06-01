@@ -1,10 +1,14 @@
-# put your python code here
-word = input() + ' запретил букву'
-for i in range(ord('Я'), ord('я') + 1):
-    mylist = [c for c in word if c != chr(i)]
-    word = ''.join(mylist)
-    if chr(i + 1) not in word:
-        continue   
-    else:    
-        print(word + ' ' + chr(i + 1)) 
-    mylist = []
+mylist = []
+temp = []
+ver = []
+st = input()
+temp = st.split(' ')
+st = ' '.join(temp)
+ver = st[0]
+for c in st:
+    if c == ver[-1]:
+        ver.append(c)
+    else:
+        continue
+    mylist.append(ver)
+    print(mylist)
