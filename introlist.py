@@ -14,4 +14,3 @@ for i in range(1, len(mylist)):
         #mylist2.append(ver)
 mylist2.append(ver)
 print(mylist2)
-
